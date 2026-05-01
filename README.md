@@ -3,33 +3,29 @@
 <h1>Stream-R1: <br> Reliability-Complexity Aware Reward Distillation <br> for Streaming Video Generation</h1>
 
 <div>
-  <a href="#" target="_blank">Yunhong Lu</a><sup>1,2</sup>,
-  <a href="https://zengyh1900.github.io/" target="_blank">Yanhong Zeng</a><sup>2</sup>,
-  <a href="#" target="_blank">Haobo Li</a><sup>2,4</sup>,
-  <a href="https://ken-ouyang.github.io/" target="_blank">Hao Ouyang</a><sup>2</sup>,
-  <a href="https://github.com/qiuyu96" target="_blank">Qiuyu Wang</a><sup>2</sup>,
-  <a href="https://felixcheng97.github.io/" target="_blank">Ka Leong Cheng</a><sup>2</sup>,
-  <br>
-  <a href="#" target="_blank">Jiapeng Zhu</a><sup>2</sup>,
-  <a href="#" target="_blank">Hengyuan Cao</a><sup>1</sup>,
-  <a href="https://zhipengzhang.cn/" target="_blank">Zhipeng Zhang</a><sup>5</sup>,
-  <a href="https://openreview.net/profile?id=%7EXing_Zhu2" target="_blank">Xing Zhu</a><sup>2</sup>,
-  <a href="https://shenyujun.github.io/" target="_blank">Yujun Shen</a><sup>2</sup>,
-  <a href="#" target="_blank">Min Zhang</a><sup>1,3</sup>
+  Bin Wu<sup>1</sup>,
+  Ziyu Jiang<sup>3</sup>,
+  Shaojin Wu<sup>3</sup>,
+  Mengqi Huang<sup>1†</sup>,
+  Weinan Jia<sup>1</sup>,
+  Yuxin Wang<sup>2</sup>,
+  Zhendong Mao<sup>1</sup>,
+  Yongdong Zhang<sup>1</sup>
 </div>
 
 <br>
 
 <div>
-  <sup>1</sup>ZJU,
-  <sup>2</sup>Ant Group,
-  <sup>3</sup>SIAS-ZJU,
-  <sup>4</sup>HUST,
-  <sup>5</sup>SJTU
+  <sup>1</sup>University of Science and Technology of China,
+  <sup>2</sup>FrameX.AI,
+  <sup>3</sup>Independent Researcher
 </div>
+
+<div><sup>†</sup> Corresponding author</div>
 
 <br>
 
+[![Project](https://img.shields.io/badge/Project-Page-blue)](https://stream-r1.github.io/)
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](#) <!-- arXiv link to be added -->
 [![Models](https://img.shields.io/badge/🤗_Models-Coming_soon-yellow)](#)
 
@@ -192,15 +188,15 @@ Stream-R1 surpasses its multi-step Wan2.1 teacher on **Total** and **Semantic** 
 | Reward Forcing | 4.82 | **4.18** | 4.04 |
 | **Stream-R1 (Ours)** | **4.92** | <u>4.04</u> | **4.11** |
 
-Project page and qualitative results — *coming soon*.
+Project page with qualitative results: <https://stream-r1.github.io/>
 
 ## Citation
 
 ```bibtex
-@article{lu2025stream,
+@article{wu2026streamr1,
   title={Stream-R1: Reliability-Complexity Aware Reward Distillation for Streaming Video Generation},
-  author={Lu, Yunhong and Zeng, Yanhong and Li, Haobo and Ouyang, Hao and Wang, Qiuyu and Cheng, Ka Leong and Zhu, Jiapeng and Cao, Hengyuan and Zhang, Zhipeng and Zhu, Xing and others},
-  year={2025}
+  author={Wu, Bin and Jiang, Ziyu and Wu, Shaojin and Huang, Mengqi and Jia, Weinan and Wang, Yuxin and Mao, Zhendong and Zhang, Yongdong},
+  year={2026}
 }
 ```
 
@@ -214,4 +210,4 @@ See [LICENSE](LICENSE).
 
 ## Contact
 
-- Email: yunhonglu@zju.edu.cn
+- Email: huangmq@ustc.edu.cn (Mengqi Huang, corresponding author)
