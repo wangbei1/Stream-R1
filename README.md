@@ -193,13 +193,7 @@ Project page and qualitative results: <https://stream-r1.github.io/>
 
 ## Citation
 
-```bibtex
-@article{wu2026streamr1,
-  title  = {Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation},
-  author = {Wu, Bin and Huang, Mengqi and Wu, Shaojin and Jia, Weinan and Wang, Yuxin and Mao, Zhendong and Zhang, Yongdong},
-  year   = {2026}
-}
-```
+A BibTeX entry will be added once the arXiv preprint is online.
 
 ## Acknowledgements
 
