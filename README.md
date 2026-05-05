@@ -28,7 +28,7 @@
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://stream-r1.github.io/)
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](#) <!-- arXiv link to be added -->
-[![Models](https://img.shields.io/badge/🤗_Models-Coming_soon-yellow)](#)
+[![Models](https://img.shields.io/badge/🤗_Models-wangbei1%2FStream--R1-yellow)](https://huggingface.co/wangbei1/Stream-R1)
 
 </div>
 
@@ -85,7 +85,7 @@ pip install -e .
 
 ## Pretrained Checkpoints
 
-Required for **training** (teacher / reward / init):
+Required for **training** (teacher / reward / init) and **inference** (Stream-R1):
 
 | Model | Download |
 |-------|----------|
@@ -93,7 +93,7 @@ Required for **training** (teacher / reward / init):
 | Wan2.1-T2V-1.3B | [Hugging Face](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B) |
 | Wan2.1-T2V-14B | [Hugging Face](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B) |
 | ODE Initialization | [Hugging Face](https://huggingface.co/gdhe17/Self-Forcing/blob/main/checkpoints/ode_init.pt) |
-| **Stream-R1 (T2V-1.3B)** | **Coming soon** — pretrained weights will be released here. |
+| **Stream-R1 (T2V-1.3B)** | **[Hugging Face](https://huggingface.co/wangbei1/Stream-R1)** |
 
 After downloading:
 ```
@@ -101,11 +101,11 @@ checkpoints/
 ├── Videoreward/
 ├── Wan2.1-T2V-1.3B/
 ├── Wan2.1-T2V-14B/
-├── Stream-R1-T2V-1.3B/   # (will be added once uploaded)
+├── Stream-R1-T2V-1.3B/
 └── ode_init.pt
 ```
 
-Or run the helper (downloads everything except the not-yet-released Stream-R1 weights):
+Or run the helper:
 ```bash
 pip install "huggingface_hub[cli]"
 bash download_checkpoints.sh
@@ -113,8 +113,10 @@ bash download_checkpoints.sh
 
 ## Inference
 
-> Stream-R1 weights are not yet released. Once uploaded, place them at
-> `checkpoints/Stream-R1-T2V-1.3B/stream_r1.pt` (any filename works — pass it via `--checkpoint_path`). Until then, you can run inference using a checkpoint produced by your own training run (`output/<timestamp>_stream_r1/checkpoint_model_*/generator.pt`).
+Place the released Stream-R1 weights at `checkpoints/Stream-R1-T2V-1.3B/stream_r1.pt`
+(any filename works — pass it via `--checkpoint_path`). You can also run inference
+on a checkpoint produced by your own training run
+(`output/<timestamp>_stream_r1/checkpoint_model_*/generator.pt`).
 
 ```bash
 # 5-second video
