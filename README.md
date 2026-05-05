@@ -43,21 +43,23 @@ Generated end-to-end by Stream-R1 at **23.1 FPS** with a single 1.3B model — n
 <table>
 <tr>
 <td width="50%">
-<video src="templates/0000_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0000_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 <td width="50%">
-<video src="templates/0043_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0043_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 </tr>
 <tr>
 <td width="50%">
-<video src="templates/0069_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0069_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 <td width="50%">
-<video src="templates/0075_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0075_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 </tr>
 </table>
+
+<sub>Videos are streamed from the [jsDelivr](https://www.jsdelivr.com/) CDN mirror of <code>templates/</code> in this repo. If you fork the project, swap <code>wangbei1/Stream-R1</code> in the URLs for your own owner/repo.</sub>
 
 ### Method
 
