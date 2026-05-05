@@ -38,28 +38,36 @@
 
 ## Showcase &mdash; 60-second videos
 
-Generated end-to-end by Stream-R1 at **23.1 FPS** with a single 1.3B model — no chunking, no interpolation, pure autoregressive rollout. Full set across 30 s / 60 s / 2 min / 3 min: <https://stream-r1.github.io/#duration>.
+Four 60-second clips generated end-to-end by Stream-R1 at **23.1 FPS** with a single 1.3B model &mdash; no chunking, no interpolation, pure autoregressive rollout. Full set across 30 s / 60 s / 2 min / 3 min: <https://stream-r1.github.io/#duration>.
 
-<table>
-<tr>
-<td width="50%">
-<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0000_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
-</td>
-<td width="50%">
-<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0043_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0069_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
-</td>
-<td width="50%">
-<video src="https://cdn.jsdelivr.net/gh/wangbei1/Stream-R1@main/templates/0075_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
-</td>
-</tr>
-</table>
+<!--
+  ─────────────────────────────────────────────────────────────────────────────
+  HOW TO MAKE THE FOUR PLAYERS BELOW RENDER
+  ─────────────────────────────────────────────────────────────────────────────
+  GitHub only renders inline videos from its own user-attachments CDN — not
+  from repo-checked-in files (raw.githubusercontent.com sends Content-Disposition: attachment)
+  and not from external CDNs like jsDelivr (blocked by media-src CSP).
 
-<sub>Videos are streamed from the [jsDelivr](https://www.jsdelivr.com/) CDN mirror of <code>templates/</code> in this repo. If you fork the project, swap <code>wangbei1/Stream-R1</code> in the URLs for your own owner/repo.</sub>
+  To populate the four players:
+    1. Open this README via the pencil (Edit) icon
+    2. For each "▼ drag …" line, click at its end, press Enter, then drag the
+       matching templates/000X_seed0.mp4 from your file system onto the new line
+    3. GitHub uploads to user-attachments and inserts a URL that auto-renders
+    4. (Optional) delete the original "▼ drag …" prompt line
+    5. Commit
+
+  The committed mp4s in templates/ stay useful for anyone cloning the repo or
+  for use on the project page; only the README inlines need the user-attachments URLs.
+  ─────────────────────────────────────────────────────────────────────────────
+-->
+
+**Case 0000** &nbsp;&middot;&nbsp; ▼ drag `templates/0000_seed0.mp4` onto the next line, then commit
+
+**Case 0043** &nbsp;&middot;&nbsp; ▼ drag `templates/0043_seed0.mp4` onto the next line, then commit
+
+**Case 0069** &nbsp;&middot;&nbsp; ▼ drag `templates/0069_seed0.mp4` onto the next line, then commit
+
+**Case 0075** &nbsp;&middot;&nbsp; ▼ drag `templates/0075_seed0.mp4` onto the next line, then commit
 
 ### Method
 
