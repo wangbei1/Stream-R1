@@ -36,25 +36,25 @@
 
 > **TL;DR**: Existing distribution-matching distillation (DMD) methods for streaming video diffusion treat every rollout, frame, and pixel as equally informative supervision. **Stream-R1** instead reweights the DMD objective along two complementary axes — *Inter-Reliability* across rollouts and *Intra-Perplexity* across spatiotemporal regions — with a single shared video reward model. The student concentrates updates where the local reward landscape has not yet flattened, converging to the teacher's high-quality mode rather than its full mixture, and surpasses the multi-step Wan2.1 teacher on VBench Total/Semantic at **23.1 FPS** with no architectural change and zero inference overhead.
 
-## Showcase &mdash; 2-minute videos
+## Showcase &mdash; 60-second videos
 
 Generated end-to-end by Stream-R1 at **23.1 FPS** with a single 1.3B model — no chunking, no interpolation, pure autoregressive rollout. Full set across 30 s / 60 s / 2 min / 3 min: <https://stream-r1.github.io/#duration>.
 
 <table>
 <tr>
 <td width="50%">
-<video src="assets/showcase/0000_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="templates/0000_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 <td width="50%">
-<video src="assets/showcase/0048_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="templates/0043_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 </tr>
 <tr>
 <td width="50%">
-<video src="assets/showcase/0075_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="templates/0069_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 <td width="50%">
-<video src="assets/showcase/0115_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+<video src="templates/0075_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
 </td>
 </tr>
 </table>
