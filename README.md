@@ -36,6 +36,31 @@
 
 > **TL;DR**: Existing distribution-matching distillation (DMD) methods for streaming video diffusion treat every rollout, frame, and pixel as equally informative supervision. **Stream-R1** instead reweights the DMD objective along two complementary axes — *Inter-Reliability* across rollouts and *Intra-Perplexity* across spatiotemporal regions — with a single shared video reward model. The student concentrates updates where the local reward landscape has not yet flattened, converging to the teacher's high-quality mode rather than its full mixture, and surpasses the multi-step Wan2.1 teacher on VBench Total/Semantic at **23.1 FPS** with no architectural change and zero inference overhead.
 
+## Showcase &mdash; 2-minute videos
+
+Generated end-to-end by Stream-R1 at **23.1 FPS** with a single 1.3B model — no chunking, no interpolation, pure autoregressive rollout. The four clips below are streamed from the project page; the full set across 30 s / 60 s / 2 min / 3 min lives at <https://stream-r1.github.io/#duration>.
+
+<table>
+<tr>
+<td width="50%">
+<video src="https://stream-r1.github.io/case/120s/0000_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+</td>
+<td width="50%">
+<video src="https://stream-r1.github.io/case/120s/0048_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<video src="https://stream-r1.github.io/case/120s/0075_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+</td>
+<td width="50%">
+<video src="https://stream-r1.github.io/case/120s/0115_seed0.mp4" controls muted loop playsinline preload="metadata" width="100%"></video>
+</td>
+</tr>
+</table>
+
+> Don't see the videos? Some markdown viewers strip HTML5 `<video>` tags — open the project page at <https://stream-r1.github.io/#duration> for the playable showcase, or download the clips directly: [0000](https://stream-r1.github.io/case/120s/0000_seed0.mp4) · [0048](https://stream-r1.github.io/case/120s/0048_seed0.mp4) · [0075](https://stream-r1.github.io/case/120s/0075_seed0.mp4) · [0115](https://stream-r1.github.io/case/120s/0115_seed0.mp4).
+
 ### Method
 
 Stream-R1 modulates the standard DMD generator loss as
@@ -70,7 +95,7 @@ Saliency from the three axes is fused with an adaptive softmax weighting that al
 ## Installation
 
 ```bash
-git clone https://github.com/wangbei1/Stream-R1.git
+git clone https://github.com/FrameX-AI/Stream-R1.git
 cd Stream-R1
 
 conda create -n stream_r1 python=3.10
