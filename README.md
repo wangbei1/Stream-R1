@@ -27,8 +27,8 @@
 <br><br>
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://stream-r1.github.io/)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](#) <!-- arXiv link to be added -->
-[![Models](https://img.shields.io/badge/🤗_Models-wangbei1%2FStream--R1-yellow)](https://huggingface.co/wangbei1/Stream-R1)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2605.03849)
+[![Models](https://img.shields.io/badge/🤗_Models-FrameX--AI%2FStream--R1-yellow)](https://huggingface.co/FrameX-AI/Stream-R1)
 
 </div>
 
@@ -93,7 +93,7 @@ Required for **training** (teacher / reward / init) and **inference** (Stream-R1
 | Wan2.1-T2V-1.3B | [Hugging Face](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B) |
 | Wan2.1-T2V-14B | [Hugging Face](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B) |
 | ODE Initialization | [Hugging Face](https://huggingface.co/gdhe17/Self-Forcing/blob/main/checkpoints/ode_init.pt) |
-| **Stream-R1 (T2V-1.3B)** | **[Hugging Face](https://huggingface.co/wangbei1/Stream-R1)** |
+| **Stream-R1 (T2V-1.3B)** | **[Hugging Face](https://huggingface.co/FrameX-AI/Stream-R1)** |
 
 After downloading:
 ```
@@ -197,7 +197,7 @@ Project page and qualitative results: <https://stream-r1.github.io/>
 
 ## Citation
 
-A BibTeX entry will be added once the arXiv preprint is online.
+A BibTeX entry will be added shortly. In the meantime please cite via the arXiv preprint at <https://arxiv.org/abs/2605.03849>.
 
 ## Acknowledgements
 
